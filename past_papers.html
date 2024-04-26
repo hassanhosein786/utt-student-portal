@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UTT | Past Papers</title>
+        <link rel = 'stylesheet' href = 'pagestyles.css'>
+    </head>
+    <body>
+        <header>
+            
+            <img src= 'images/utt.png' alt= 'logo' width= '300'>
+        </header>
+        <div class = "column sidebar">
+            <p></p>
+            </div>
+            <div class = "column center">
+                <h2>UTT Past Papers Listing</h2>
+                <h5><em>Click on a heading to sort results.</em></h5>
+                <main>
+                    <table id = "PastPapers">
+                        <tr>
+                            <th onclick="sortTable(0)">Name</th>
+                            <th onclick="sortTable(1)">Modified</th>
+                            <th onclick="sortTable(2)">Modified By</th>
+                            <th onclick="sortTable(3)">Year</th>
+                            <th onclick="sortTable(4)">Course Code</th>
+                            <th onclick="sortTable(5)">Title</th>
+                        </tr>
+                        <tr>
+                            <td>2008 Chemistry P2</td>
+                            <td>September 4th, 2019</td>
+                            <td>Manfred Jones</td>
+                            <td>2008</td>
+                            <td>CHEM2</td>
+                            <td>Chemistry 2008 2</td>
+                        </tr>
+                        <tr>
+                            <td>2020 Physics P3</td>
+                            <td>October 12th, 2020</td>
+                            <td>Wilfred James</td>
+                            <td>2020</td>
+                            <td>PHYS3</td>
+                            <td>Physics 2020 3</td>
+                        </tr>
+                        <tr>
+                            <td>2010 Calculus 2</td>
+                            <td>November 26th, 2012</td>
+                            <td>Victor Graham</td>
+                            <td>2010</td>
+                            <td>CALC</td>
+                            <td>Calculus 2010 2</td>
+                        </tr>
+                        <tr>
+                            <td>2012 Business Communication</td>
+                            <td>September 25th, 2015</td>
+                            <td>Arnold David</td>
+                            <td>2012</td>
+                            <td>BSCO</td>
+                            <td>Business Communication 2012</td>
+                        </tr>
+                        <tr>
+                            <td>2007 Psychology I</td>
+                            <td>January 17th, 2011</td>
+                            <td>Vanessa Haynes</td>
+                            <td>2007</td>
+                            <td>PSYCI</td>
+                            <td>Psychology 2007, pt I</td>
+                        </tr>
+                        <tr>
+                            <td>2018 Envi. Engineering 1</td>
+                            <td>April 4th, 2021</td>
+                            <td>Ronald Smith</td>
+                            <td>2018</td>
+                            <td>ENVE1</td>
+                            <td>Environmental Engineering 2018 1</td>
+                        </tr>
+                        <tr>
+                            <td>2011 Mathematics I P1</td>
+                            <td>May 6th, 2014</td>
+                            <td>Roald Dahl</td>
+                            <td>2011</td>
+                            <td>MATHI1</td>
+                            <td>Math I P1</td>
+                        </tr>
+                        <tr>
+                            <td>2019 HTML and CSS Design 1</td>
+                            <td>April 29th, 2021</td>
+                            <td>Rick Astley</td>
+                            <td>2019</td>
+                            <td>HTML1</td>
+                            <td>HTML & CSS 2019 1</td>
+                        </tr>
+                        <tr>
+                            <td>2014 Chemistry P1</td>
+                            <td>September 4th, 2019</td>
+                            <td>Manfred Jones</td>
+                            <td>2008</td>
+                            <td>CHEM1</td>
+                            <td>Chemistry 2014</td>
+                        </tr>
+                        <tr>
+                            <td>2018 Psychology I</td>
+                            <td>January 21st, 2020</td>
+                            <td>Vanessa Haynes</td>
+                            <td>2018</td>
+                            <td>PSYCI</td>
+                            <td>Psychology 2018, pt I</td>
+                        </tr>
+                    </table>
+                    
+                </main>
+                <a class= 'button' href = "file:///C:/Users/hassa/OneDrive/Desktop/UTT/Year%201/Semester%202/User%20Interface%20Design/HTML/Project/homepage.html">Dashboard</a>
+            </div>
+        
+		<a class = 'button2' href = 'file:///C:/Users/hassa/OneDrive/Desktop/UTT/Year%201/Semester%202/User%20Interface%20Design/HTML/Project/login.html' >Log Out</a>
+        
+	<div class="problem">
+    <a href="file:///C:/Users/hassa/OneDrive/Desktop/UTT/Year%201/Semester%202/User%20Interface%20Design/HTML/Project/problem.html">
+    <img src='images/problem.png' width='125' alt='Report a Problem'/>
+    </a>
+  </div> 
+  
+        <script>
+            function sortTable(n) {
+              var table, rows, switching, i, x, y, shouldSwitch, switchcount = 0;
+              table = document.getElementById("PastPapers");
+              switching = true;
+              while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                  shouldSwitch = false;
+                  x = rows[i].getElementsByTagName("TD")[n];
+                  y = rows[i + 1].getElementsByTagName("TD")[n];
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                      shouldSwitch= true;
+                      break;
+                    }
+                }
+                if (shouldSwitch) {
+                  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                  switching = true;
+                  switchcount ++;      
+                } 
+              }
+            }
+        </script>
+    </body>
+</html>

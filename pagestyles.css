@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: "arial", "helvetica", sans-serif;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.column.sidebar{
+    width: 10%;
+
+}
+
+main{
+    border: 2px solid #e16060;
+    height: 500px;
+    overflow: auto;
+}
+
+.column.center{
+    width: 75%;
+}
+
+.column p{
+    padding: 10px;
+}
+
+.button{
+    display:block;
+    margin: auto;
+    width: 15%;
+    border: 1px solid gray;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius:4px;
+    background-color: #e16060;
+    text-align:center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.button:hover{
+    background-color: #b84e4e;
+    
+    
+}
+
+
+
+
+
+#bookSearch {
+  background-image: url("#"); /*Search Icon*/
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 90%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#bookList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#bookList li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#bookList li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+table{
+    width:100%;
+    border: 1px solid black;
+    display:block;
+    height: 495px;
+    text-align: center;
+    overflow: auto;
+}
+
+th{
+    cursor: pointer;
+    width:17.9%;
+    border: 2px outset black;
+    color: white;
+    background-color: #e16060;
+}
+
+td{
+  overflow: auto;
+  height: 25px;
+  border: 1px solid black;
+  padding-top:6px;
+  padding-bottom:6px;
+  
+}
+
+td:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+.button2 {
+	position:fixed;
+	bottom: 0px;
+	left: 10px;
+	color: #FFF;
+	background-color: #E16060;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	width: 120px;
+	margin: 20px auto;
+	margin-left: 1350px;
+	margin-bottom: 620px;
+}
+
+.button2:hover {
+  color: #5DCBEF;
+}
+
+.problem {
+	position:fixed;
+	margin-left: 1350px;
+	margin-top: 420px;
+}

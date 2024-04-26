@@ -1,0 +1,167 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #E16060;
+}
+
+p{
+	font-size: 20px;
+	color: #575656;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+body{
+	background-color: #F4F2F2;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button2 {
+	color: #000000;
+	background-color: #E16060;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	width: 175px;
+	margin: 20px auto;   
+}
+
+.call-to-action{
+	font-style: italic;
+	background-color: #DF0174;
+}
+
+.call-to-action:link, .call-to-action:visited{
+	font-style: italic;
+	background-color: #EEB75A; 
+}
+
+.call-to-action:hover, .call-to-action:visited:hover{
+	background-color: #F5CF8E;
+}
+
+.call-to-action:hover, .call-to-action:visited:active{
+	background-color: #EEB75A;
+}
+
+a:link{
+	color: black;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #000000;
+}
+
+a:hover{
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+a:active{
+	color: red;
+}
+
+.button2:link, .button2:visited{
+	display: block;
+	text-decoration: none;
+}
+
+.button2:active, .button2:visited:active{
+	color: #DFFF00;
+	background-color: #9FE2BF; 
+}
+
+.button2:hover, .button2:visited:hover{
+	color: #6495ED;
+	background-color: #FF0000; 
+}
+
+.logo {
+	margin-left: 0px;
+}
+
+.dash {
+	margin-left: 0px;
+	font-size: 30px;
+}
+
+.button {
+	position:fixed;
+	bottom: 0px;
+	left: 10px;
+	color: #FFF;
+	background-color: #E16060;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	width: 100px;
+	margin: 20px auto;
+	margin-left: 1350px;
+	margin-bottom: 620px;
+}
+
+.button:hover {
+  color: #5DCBEF;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #E16060;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #E16060;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #E16060;
+  background: #E16060;
+  text-align: center;
+  color: #E16060;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 30%;
+  top: 50%;
+  margin-left: 1050px;
+}
+
+.problem {
+	position:fixed;
+	margin-left: 1400px;
+	margin-top: 410px;
+}

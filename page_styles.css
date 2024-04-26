@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family: "arial", "helvetica", sans-serif;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.column.sidebar{
+    width: 10%;
+    margin-left: 120px;
+}
+
+main{
+    border: 2px solid #e16060;
+    height: 500px;
+    overflow: auto;
+}
+
+.column.center{
+    width: 75%;
+}
+
+.column p{
+    padding: 10px;
+}
+
+#bookSearch {
+  background-image: url("#"); /*Search Icon*/
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 90%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#bookList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#bookList li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#bookList li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.button {
+	position:fixed;
+	bottom: 0px;
+	left: 10px;
+	color: #FFF;
+	background-color: #E16060;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	width: 120px;
+	margin: 20px auto;
+	margin-left: 1350px;
+	margin-bottom: 620px;
+}
+
+.button:hover {
+  color: #5DCBEF;
+}
+
+.logo {
+	margin-left: 150px;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #E16060; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.footer {
+	text-align: center;
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #E16060;
+}

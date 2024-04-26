@@ -1,0 +1,89 @@
+.logo {
+	margin-left: 150px;
+}
+
+.button {
+	position:fixed;
+	bottom: 0px;
+	left: 10px;
+	color: #FFF;
+	background-color: #E16060;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	width: 100px;
+	margin: 20px auto;
+	margin-left: 1350px;
+	margin-bottom: 620px;
+}
+
+.button:hover {
+  color: #5DCBEF;
+}
+
+.speaker-form {
+	background-color: #E16060;
+	border: 2px #000000;
+	border-radius: 3px;
+	width: 80%;
+	padding: 50px;
+	margin: 0 0 40px 0;
+}
+
+.form-row {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'] {
+	background-color: #FFFFFF;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	width: 100%;
+	padding: 7px;
+	font-size: 14px;
+}
+
+.form-row label {
+	margin-bottom: 15px;
+}
+
+.speaker-form-header {
+	text-align: center;
+	background-color: #E16060;
+	border: 2px solid #000000;
+	border-radius: 3px;
+  	width: 80%;
+ 	margin: 40px 0;
+	padding: 50px;
+}
+
+.speaker-form-header h1 {
+   font-size: 30px;
+    margin-bottom: 20px;
+}
+
+body {
+  background-color: #EAEDF0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #E16060;
+}
